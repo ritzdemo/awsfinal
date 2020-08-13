@@ -1,0 +1,45 @@
+.careerspage{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    margin-top: 50px;
+    height: calc(100vh - 225px);
+}
+.careerspage p{
+    font-size: medium;
+}
+.careerspage span
+{
+    font-size: larger;
+    color: #18aff0;
+    font-weight: 900;
+}
+@media(max-width:900px)
+{  
+    .careerspage p{
+        font-size: 14px;
+    }   
+}
+
+@media(max-width:600px)
+{  
+    .careerspage p{
+        font-size: 12px;
+    }   
+}
+@media(max-width:460px)
+{  
+    .careerspage p{
+        font-size: 9px;
+    }   
+}
+@media(max-width:320px)
+{  
+    .careerspage p{
+        font-size: 8px;
+    }   
+}

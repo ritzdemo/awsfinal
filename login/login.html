@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="login.css">
+    <title>Login</title>
+</head>
+<body>
+    <!-- <img src="../images/WhatsApp Image 2020-08-06 at 11.01.59 PM.jpeg" alt="background pic" class="loginbgpic"/> -->
+    <div class="login">
+        <b><h1>Company Name</h1>
+        <form action="/auth_user" method="post">
+            <h2>Login</h2>
+            <p>Enter you super secret access token</br>
+            <input type="text" name="access_token" id="access_token" required></p>
+            <input type="submit" value="Login">
+        </form>
+    </div>
+    <script src="./script.js" async defer></script>
+    <script>
+        document.querySelectorAll(".hoverdown").forEach(e=>{
+            e.addEventListener("mouseover",(p)=>{
+                document.querySelectorAll("."+e.getAttribute("id")).forEach(e=>{
+                    e.style.display="block"
+            })
+            e.addEventListener("mouseout",(p)=>{
+                document.querySelectorAll("."+e.getAttribute("id")).forEach(e=>
+                    e.style.display="none"
+                )
+            })
+        })
+    })
+    </script>
+</body>
+</html>

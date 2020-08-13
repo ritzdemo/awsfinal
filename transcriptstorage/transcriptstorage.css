@@ -1,0 +1,109 @@
+.nchild:nth-child(2){
+    grid-area: b;
+}
+.nchild:nth-child(1){
+    grid-area: a;
+}
+.transcribestorage{
+    min-height: calc(100vh - 225px);
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-areas: "a b ";
+    grid-gap: 10px;
+}
+.selecttype{
+    height: 15vh;
+    border-radius: 0px 30px 30px 0px;
+    background-color: #E1EDF1;
+    color: #4d4b4b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    margin: 40px 0px;
+    padding: 10px;
+}
+.folder
+{
+    background-color: white;
+    margin: auto;
+    padding: 50px;
+    /* padding: 2%; */
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+    width: 90%;
+}
+.folder div{
+    color: black;
+    display: flex;
+    flex-direction:column;
+}
+.folder{
+    display:grid;
+    grid-gap:1em;
+    grid-template-columns:auto auto auto auto auto auto;
+    grid-template-rows: auto;
+}
+@media(max-width:900px){
+    .folder{
+        grid-template-columns:auto auto auto auto auto;
+    }
+}
+@media(max-width:600px)
+{
+    .transcribestorage{
+        font-size: 12px;
+        grid-template-areas: "a a"
+                            "b b";      
+    }  
+    .nchild:nth-child(1){
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }  
+    .selecttype{
+        /* width: 25%; */
+        height: 10vh;
+        border-radius: 10px;  
+        text-align: center;
+        padding: 20px;          
+    }     
+    .transcribestorage{
+        font-size: 14px;
+    } 
+    .folder{
+        grid-template-columns:auto auto auto auto;
+        padding: 15px;
+        width: 95%;
+    }                            
+}      
+@media(max-width:460px)
+{
+    .folder{
+        grid-template-columns: auto;
+        border: none;
+    }
+   .folder div{
+       flex-direction: row;
+       align-items: center;
+       border-bottom: 1px solid rgba(0, 0, 0, .2);
+       /* padding: 0%; */
+       /* padding-bottom: 3%; */
+   }
+   .folder div p{
+       font-size:12px
+       /* padding:4%; */
+   }
+   .selecttype{
+       /* width: 30%; */
+       width: 100px;
+       height: 80px;
+       margin: 10px 0 0 0;
+       font-size: 12px;
+       padding: 13px;
+       /* padding: 2%; */
+       /* margin: 20px 0px; */
+   }                                     
+}  

@@ -1,0 +1,81 @@
+.pricing{
+    margin-top: 70px;
+    /* height: 70vh; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: calc(100vh - 225px);
+    margin-top: 50px;
+}
+.pricebar div{
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.pricebar{
+    background: linear-gradient(180deg, #1C79A0 0%, #68C8F1 100%);
+    width: 350px;
+    height: 80%;
+    display: flex; 
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px;
+    padding:50px;
+}
+.pricing div p{
+    font-size: x-large;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 5%;
+}
+.pricing button{
+    width: 150px;
+    border: none;
+    padding: 10px ;
+    border-radius: 30px;
+    box-shadow: rgba(5, 8, 59, 0.493) 0 0 10px 0px;
+}
+@media(max-width:900px){
+    .pricing div p{
+        font-size: large;
+    }
+    .pricebar{
+        width: 250px;
+        padding: 20px;
+    }
+}
+@media(max-width:600px){
+    *{
+        font-size: 10px;
+    }
+    .pricebar{
+        width: 200px;
+    }
+}
+@media(max-width:460px){
+    .pricing{
+        flex-direction: column;
+    }
+    .pricebar{
+        width: 80%;
+        height: 40%;
+        padding: 40px;
+    }
+    .pricing button{
+        width: 80px;
+        padding: 5px 0px;
+        margin:20px;
+        border-radius: 10%;
+    }
+}
+@media(max-width:320px){
+    .pricing div{
+        width: 250px;
+    }.pricing div p{
+        width: 150px;
+    }   
+}

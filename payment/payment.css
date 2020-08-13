@@ -1,0 +1,168 @@
+.payment{
+    min-height: calc(100vh - 225px);
+    margin-top: 50px;
+}
+.steps{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 800px;
+    height: 170px;
+    margin: auto;
+}
+.step{
+    /* width: 200px; */
+    /* margin: auto; */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} 
+.stepno{
+    width: 70px;
+    height: 70px;
+    color: white;
+    background-color: #1C79A0;
+    /* padding: 2% 3%; */
+    /* padding: 55px; */
+    border-radius: 50%;
+    font-size: xx-large;
+    text-align: center;
+    align-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stepno span{
+    font-size: xx-large;
+}
+
+.steps p{
+    text-align: center;
+    /* padding: 7% 0%; */
+}
+.payment form{
+    display: flex;
+    flex-direction: column;
+    width: 720px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border: 1px solid #1C79A0;
+    padding: 10px;
+    border-radius: 20px;
+    margin-bottom: 5.5vh;
+}
+.payment form h3{
+    font-size: large;
+}
+.payment form input{
+    width: 40%;
+    margin: 10px;
+    border: none;
+    margin-bottom: 10px;
+    outline: none;
+    border-bottom: 1px solid rgba(0, 0, 0, .4);
+}
+.payment form p{
+    text-align: center;
+    width: 80%;
+}
+.bluebtn{
+    background-color: #006089;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 2% 2%;
+    height: 10%;
+    border: none;
+}
+form p{
+    font-size: 14px;
+}
+@media(max-width:900px)
+{
+    /* *{
+        font-size: 10px;
+    } */
+    .steps{
+        width: 590px;
+    }
+    .payment form{
+        width: 530px;        
+    }   
+    .stepno{
+        width: 60px;
+        height: 60px;
+    }
+    .stepno span{
+        font-size: 20px;
+    }
+    .steps p{
+        font-size: 10px;
+    }
+    /* .step{
+        widt
+    } */
+}
+@media(max-width:600px)
+{     form p{
+    font-size: 12px;
+}
+
+    .steps{
+        width: 420px;
+    }   
+    .payment form{
+        width: 400px;        
+    }
+    .step{
+        width: auto;
+    }
+
+}
+@media(max-width:460px)
+{    form p{
+    font-size: 10px;
+}
+    /* *{
+        font-size: 10px;
+    } */
+    .steps{
+        width: 320px;
+        height: 130px;
+        /* height: 25vh; */
+    }
+    
+    .stepno{
+        width: 50px;
+        height: 50px;
+    }       
+    .stepno span{
+        font-size: large;
+    }
+    .arrowicon{
+        width: 30px;
+        height: 30px;
+    }
+    .arrowdiv{
+        margin-top: -15px;
+        margin-left: -10px;
+    }
+    .payment form{
+        width: 300px;        
+    }
+    .payment form input{
+        width: 200px;
+    }
+}
+@media(max-width:320px){
+    .steps{
+        width: 250px;
+    }
+    .payment form{
+        width: 230px;
+    }
+}

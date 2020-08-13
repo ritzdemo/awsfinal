@@ -1,0 +1,151 @@
+.aboutus{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Poppins';
+    margin-top: 50px;
+    min-height: calc(100vh - 225px);
+}
+nav li a{
+    font-weight: lighter;
+}
+.aboutus h3{
+    color: #1C79A0;
+    margin: 2%;
+    font-size:27px;
+}
+.aboutus h6{
+    margin-top:15px;
+    font-size: 17px;
+    color: #1C79A0;
+}
+.aboutus h6:nth-child(2)
+{   font-size: 20px;
+    color:#003B54;
+}
+.aboutus p{
+    margin-top: 20px;
+    width: 40%;
+    font-size: 15px;
+    /* width: 100px; */
+    
+}
+.teammembers{
+    width: 97%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.teammember{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width:240px;
+    padding: 20px;
+    text-align: left;
+}
+.teamdetail{
+    width: 50%;
+}
+.teamdetail p{
+    padding-left: 2%;
+    width: 100%;
+    margin: 0;
+    white-space: nowrap;
+    font-size: small;
+}
+.teammember img{
+    width: 80px;
+    height: 80px;
+    border-radius: 70%;
+}
+.maplocation{
+    width: 89%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 3%;
+}
+.maplocation div{
+    height:300px;
+    padding: 3%;
+    background-color: #F3F3F3;
+    display: flex;
+    flex-direction: column;
+    align-self: start;
+}
+    .maplocation div span{
+    font-size: large;
+    color: #1C79A0;
+    line-height: 2em;
+    width:100%;
+    text-align:start;
+}
+@media (max-width:900px)
+{
+    .teamdetail{
+        width: 95%;
+    }
+    .aboutus p{
+        width: 70%;
+    }          
+    .maplocation{
+        width: 90%;
+    }
+}
+@media(max-width:600px)
+{
+    .maplocation{
+        flex-direction: column;
+    }
+    .maplocation div{
+        width: 80%;
+        align-self: center;
+        padding: 0%;
+    }
+    .maplocation div span{
+        text-align: center;
+    }
+    .maplocation div span{
+        line-height: 150%;
+        padding: 20px;
+    }
+}
+@media(max-width:460px)
+{
+    .teammembers{
+        overflow-x: auto;
+        justify-content: start;
+        flex-wrap: nowrap;
+        width: 100%;
+    }  
+    .teammember{
+        flex-direction: column;
+        margin: 20px;
+        border: 1px solid rgba(0, 0, 0, .5);
+        border-radius: 20px;
+        height: 200px;
+    }
+    .teamdetail{
+        width: 150px;
+        text-align: center;
+    } 
+    .teammember p{
+        width: 150px;
+        text-align: center;
+    }
+    .maplocation div{
+        width: 90%;
+        height: fit-content;
+    }
+    iframe{
+        width:90%;
+    }
+}
