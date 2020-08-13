@@ -57,9 +57,10 @@
 }
 .payment form h3{
     font-size: large;
+    letter-spacing: 2px;
 }
 .payment form input{
-    width: 40%;
+    width: 400px;
     margin: 10px;
     border: none;
     margin-bottom: 10px;
@@ -121,7 +122,9 @@ form p{
     .step{
         width: auto;
     }
-
+    .payment form input{
+        width: 300px;
+    }
 }
 @media(max-width:460px)
 {    form p{
