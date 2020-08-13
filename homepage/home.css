@@ -1,4 +1,4 @@
-* {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -469,20 +469,10 @@ button {
 .testimonials .btn.prev {
   left: 15px;
 }
-@media screen and (max-width: 480px) {
-  .item {
-    padding: 0 30px;
-  }
-  .card {
-    padding: 80px 30px 30px;
-  }
-}
-.button1 {
-  margin-top: 60px;
-}
+
 .contactus {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+ 
+  
   background-color: #005478;
   width: 300px;
   border:none;
@@ -497,6 +487,7 @@ button {
 }
 .cancelbtn{
   float:right;
+
 }
 .contactus h1 {
   padding-top: 10px;
@@ -509,7 +500,9 @@ button {
   background-color: #005478;
   border: none;
   border-bottom: white solid 1px;
-  width: 200px;
+  width: 70%;
+
+
   margin-bottom: 10px;
   color: white;
 }
@@ -519,8 +512,9 @@ button {
   color: white;
 }
 .contactus textarea {
+  margin-top: 20px;
   background-color: #005478;
-  width: 200px;
+  width: 70%;
   color: white;
 }
 .contactus form input[type="email"],
@@ -528,16 +522,40 @@ textarea:focus {
   outline: none;
 }
 .contactus input[type="submit"] {
-  margin:0 0 20px 163px;
+  margin: 10px 0 10px 0 ;
   border-radius: 4px;
   border: none;
-  padding: 3px;
+  padding: 5px 15px;
 }
 .contactus form textarea::placeholder {
   font-size: 13px;
   font-weight: lighter;
   color: white;
 }
+
+.contactus_grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 320px 0 10px;
+  grid-gap: 7em;
+  padding-top: 30px;
+}
+.contactus_grid h1{
+  font-size: 40px;
+  margin-top:13% ;
+}
+@media screen and (max-width: 480px) {
+  .item {
+    padding: 0 30px;
+  }
+  .card {
+    padding: 80px 30px 30px;
+  }
+}
+.button1 {
+  margin-top: 60px;
+}
+
 
 @media (max-width: 900px) {
   .sitename h2 {
@@ -640,9 +658,26 @@ textarea:focus {
     left: 15px;
     padding: 0;
   }
+  .contactus_grid{
+    margin: 0;
+    grid-gap: 1em;
+  }
+  .contactus_grid h1{
+    font-size: 35px;
+    white-space: nowrap;
+    margin-top: 50px;
+   
+  }
 @media (max-width: 700px) {
   .sitename {
     top: 50%;
+  }
+  .contactus_grid h1{
+    font-size: 30px;
+  }
+  .contactus_grid{
+    margin: 0;
+
   }
   .sitename h1 {
     font-size: 50px;
@@ -749,11 +784,12 @@ textarea:focus {
      height: 180px;
   }
   .contactus {
+   
     background-color: #005478;
-    width: 300px;
+    
     border:none;
     text-align: center;
-    border-radius: 5px;
+  
     position: sticky;
     bottom: 0;
     left: -1px;
@@ -764,30 +800,42 @@ textarea:focus {
   }
   .cancelbtn{
     float:right;
+
   }
-  .contactus h1 {
+  .contactus_grid{
+    display: block;
+    
+  }
+  
+
+  .contactus .contactus_grid h1 {
     padding-top: 10px;
     font-weight: lighter;
     font-size: 18px;
     color: white;
+    margin: 0;
     text-align: center;
   }
   .contactus input[type="email"] {
     background-color: #005478;
     border: none;
+    margin-right: 0;
+    width: 300px;
     border-bottom: white solid 1px;
-    width: 200px;
     margin-bottom: 10px;
     color: white;
   }
   .contactus form input[type="email"]::placeholder {
     font-size: 13px;
+
     font-weight: lighter;
     color: white;
   }
+  
   .contactus textarea {
     background-color: #005478;
-    width: 200px;
+    width: 300px;
+    margin-top: 5px;
     color: white;
   }
   .contactus form input[type="email"],
@@ -795,7 +843,7 @@ textarea:focus {
     outline: none;
   }
   .contactus input[type="submit"] {
-    margin:0 0 20px 163px;
+    margin:0 0 20px 260px;
     border-radius: 4px;
     border: none;
     padding: 3px;
