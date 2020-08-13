@@ -36,10 +36,11 @@
     padding: 5%;
 }
 .pricing button{
-    width: 100px;
+    /* width: 120px; */
     border: none;
-    padding: 15px ;
-    border-radius: 15%;
+    padding: 10px 50px;
+    border-radius: 50px;
+    white-space: nowrap;
     box-shadow: rgba(5, 8, 59, 0.493) 0 0 10px 0px;
 }
 @media(max-width:900px){
@@ -48,6 +49,9 @@
     }
     .pricebar{
         width: 25%;
+    }
+    .pricing button{
+        padding: 10px 20px;
     }
 }
 @media(max-width:600px){
@@ -100,7 +104,7 @@
         /* padding: 20px; */
     }
     .pricing button{
-        padding: 5px 20px;
+        padding: 10px 20px;
         white-space: nowrap;
     }
 }
