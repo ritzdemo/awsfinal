@@ -540,10 +540,6 @@ textarea:focus {
 }
 
 @media (max-width: 900px) {
-  * {
-    font-size: 10px;
-  }
-
   .sitename h2 {
     font-size: 20px;
   }
